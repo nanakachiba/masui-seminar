@@ -1,0 +1,12 @@
+.wrapper{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.element{
+    background-color: #EDFFBE;
+    border-radius: 10px;
+    font-size: 24px;
+    width: 30%;
+    margin: 20px;
+}
