@@ -1,0 +1,119 @@
+
+body{
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+h1,h2,p{
+  text-align: center;
+  max-width: 640px;
+  width: 100%;
+  margin: auto;
+  letter-spacing: 0.175em;
+  color: #323232;
+  line-height: 2.25em;
+}
+p{
+  font-size: 20px;
+}
+img{
+  width :200px;
+  height: auto;
+}
+ul{
+  list-style-type: none;
+  font-size: 18px;
+  width: 95%;
+}
+.scroll_lst{
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.scroll_item{
+  display: flex;
+}
+.scroll_item_thum{
+  float: left;
+  margin: 0px;
+}
+.scroll_item_info{
+  display: inline-block;
+  width: 50%;
+}
+
+
+
+
+
+
+.flip {
+  position: relative;
+}
+
+.flip > .front,
+.flip > .back {
+  display: block;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+
+.flip > .front {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.flip > .back {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.flip:hover > .front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip:hover > .back {
+  opacity: 1;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.flip {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 1em;
+  width: 40%;
+}
+.flip > .flont:first,
+.flip > .back:first{
+  margin: 20px ,0px;
+}
+
+.flip > .front,
+.flip > .back {
+  display: block;
+  color: #323232;
+  width: 90%;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 220px;
+  padding: 1em 2em;
+  margin-right: 20px;
+  background: #F0F8FF;
+  border-radius: 10px;
+}
+
+
+/*# sourceMappingURL=style.css.map */
